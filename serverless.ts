@@ -61,6 +61,18 @@ const serverlessConfiguration: AWS = {
           }
         }
       ]
+    },
+    updateEmployee: {
+      handler: "src/functions/updateEmployee.handler",
+      events: [
+        {
+          http: {
+            path: "updateEmployee/{id}",
+            method: "put",
+            cors: true
+          }
+        }
+      ]
     }
   },
   package: { individually: true },
