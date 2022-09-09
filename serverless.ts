@@ -37,6 +37,18 @@ const serverlessConfiguration: AWS = {
           }
         }
       ]
+    },
+    listEmployeeById: {
+      handler: "src/functions/listEmployeeById.handler",
+      events: [
+        {
+          http: {
+            path: "listEmployeeById/{id}",
+            method: "get",
+            cors: true
+          }
+        }
+      ]
     }
   },
   package: { individually: true },
