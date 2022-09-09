@@ -1,6 +1,6 @@
 # Serverless + DynamoDB + Typescript API
 
-O [Stefanini] disponibiliza uma API Serverless que permite criação, edição, exclusão, leitura de todos os funcionarios e por ID.
+Teste para [Stefanini] um app serverless que permite criação, edição, exclusão, leitura de todos os funcionarios e por ID.
 
 
 ## Métodos
