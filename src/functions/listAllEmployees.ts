@@ -1,13 +1,6 @@
 import { APIGatewayProxyHandler } from "aws-lambda";
 import { document } from '../utils/dynamodbClient'
 
-interface IListEmployee {
-    name: string;
-    id: string;
-    created_at: string;
-    role: string;
-}
-
 export const handler: APIGatewayProxyHandler = async (event) => {
 
     const response = await document.scan({

@@ -2,9 +2,9 @@ import { APIGatewayProxyHandler } from "aws-lambda";
 import { document } from '../utils/dynamodbClient'
 
 interface IListEmployee {
+    age: number;
     name: string;
     id: string;
-    created_at: string;
     role: string;
 }
 
