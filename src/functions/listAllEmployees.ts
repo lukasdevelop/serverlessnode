@@ -11,7 +11,7 @@ export const handler: APIGatewayProxyHandler = async (event) => {
     
     if(response) {
         return {
-            statusCode: 201,
+            statusCode: 200,
             body: JSON.stringify({
                 message: "Funcionarios cadastrados",
                 data: response
