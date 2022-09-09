@@ -81,7 +81,7 @@ Requisições para a API devem seguir os padrões:
             "Count": 1,
             "ScannedCount": 1
 	}
-}
+
 + Response 400 (application/json)
   Quando registro não for encontrado.
 
