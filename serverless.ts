@@ -73,6 +73,18 @@ const serverlessConfiguration: AWS = {
           }
         }
       ]
+    },
+    deleteEmployee: {
+      handler: "src/functions/deleteEmployee.handler",
+      events: [
+        {
+          http: {
+            path: "deleteEmployee/{id}",
+            method: "delete",
+            cors: true
+          }
+        }
+      ]
     }
   },
   package: { individually: true },
